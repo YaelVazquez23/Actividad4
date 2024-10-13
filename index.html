@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vazquez Gonzalez Diego Yael</title>
+  </head>
+ <body>
+ <h1>Formulario de Registro para el webinar</h1>
+ <form action="procesar_webinar.php" method="POST">
+  
+<label for="nombre">Nombre Completo</label> 
+<input type="text" id="nombre" name="nombre" required> <br> <br>
+
+<label for="correo">Correo electronico</label>
+<input type="email" id="correo" name="correo" required><br> <br>
+
+<label for="telefono">Telefono:</label> 
+<input type="text" id="telefono" name="telefono" required><br> <br>
+
+<label>¿Cómo te enteraste del webinar?</label><br>
+<input type="radio" id="redes" name="fuente" value="email" required>
+<label for="email">correo</label><br>
+<input type="radio" id="amigos" name="fuente" value="Amigos o Familiares" required>
+<label for="amigos">Amigos o Familiares</label><br>
+<input type="radio" id="otros" name="fuente" value="Otros"required>
+<label for="otros">Otros</label><br>
+
+<label for="tema">Temas de Interés:</label>
+<select id="tema" name="tema">
+    <option value="tecnologia">Tecnología</option>
+    <option value="Educacion">Educacion</option>
+    <option value="Salud">Salud</option>
+</select><br><br>
+
+<label>Opciones de Participacion:</label><br>
+<input type="checkbox" id="certificado" name="opciones []" value="Certificado">
+<label for="certificado">Deseo recibir un certificado</label><br>
+<input type="checkbox" id="grabacion" name="opciones []" value="Grabacion">
+<label for="grabacion">Deseo recibir la grabacion</label><br><br>
+<label for="comentarios">Comentarios:</label><br>
+<textarea id="comentarios" name="comentarios" rows="4" cols="50"> </textarea>
+<br>
+<input type="submit" value="Registrarse">
+</form>   
+</body> 
+</html>
